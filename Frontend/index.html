@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Belinha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Studio Bella Santos</h1>
+    <h2>Agende seu horário</h2>
+    <p class="bio">Oii, eu sou Isabela Santos!
+Sou Lash Designer, especialista em extensão de cílios e design de sobrancelhas. Tenho 18 anos e atuo na área da beleza há 2 anos, sempre buscando realçar a beleza natural de cada cliente com muito cuidado, técnica e amor pelo que faço. 💖
+Meu objetivo é oferecer um atendimento personalizado e de qualidade, com foco na harmonia do olhar, autoestima e bem-estar de cada pessoa que passa pela minha maca.</p>
+
+    <form id="agendaForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required />
+      
+
+      <label for="especialidade">Especialidade:</label>
+      <select id="especialidade" required>
+        <option value="">Selecione uma opção</option>
+        <option value="Volume Brasileiro">Volume Brasileiro - R$ 130,00</option>
+        <option value="Volume Egípcio">Volume Egípcio - R$ 140,00</option>
+        <option value="Volume glamour">Volume Glamour - R$ 150,00</option>
+        <option value="Volume power">Volume Power - R$ 150,00</option>
+        <option value="Volume luxo">Volume Luxo - R$ 160,00</option>
+        <option value="Volume fox eyes">Volume fox eyes - R$ 160,00</option>
+        <option value="Volume mega">Volume mega - R$ 190,00</option>
+        <option value="Design sobrancelha">Design sobrancelha - R$ 30,00</option>
+        <option value="Design sobrancelha com henna">Design sobrancelha com henna - R$ 40,00</option>
+      </select>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" required />
+
+      <label for="hora">Horário:</label>
+      <select id="hora" required>
+        <option value="">Selecione um horário</option>
+        <option value="08:00">08:00</option>
+        <option value="08:30">08:30</option>
+        <option value="09:00">09:00</option>
+        <option value="09:30">09:30</option>
+        <option value="10:00">10:00</option>
+        <option value="10:30">10:30</option>
+        <option value="11:00">11:00</option>
+        <option value="11:30">11:30</option>
+        <option value="12:00">12:00</option>
+        <option value="12:30">12:30</option>
+        <option value="13:00">13:00</option>
+        <option value="13:30">13:30</option>
+        <option value="14:00">14:00</option>
+        <option value="14:30">14:30</option>
+        <option value="15:00">15:00</option>
+        <option value="15:30">15:30</option>
+        <option value="16:00">16:00</option>
+        <option value="16:30">16:30</option>
+        <option value="17:00">17:00</option>
+        <option value="17:30">17:30</option>
+        <option value="18:00">18:00</option>
+</select>
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <div class="msg" id="mensagem"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
